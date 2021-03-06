@@ -4,7 +4,7 @@ export default{
         port:3000
     },
     mongodb:{
-        host:'172.17.0.2',
+        host:'192.168.3.17',
         port:'27017',        
         userName:'dba-root',
         password:'mongoadmin'

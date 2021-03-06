@@ -8,7 +8,7 @@ export default class MongoDBHelper {
     private static _instace: MongoDBHelper;
     private cnn: any;
     private dbUri: string;
-    constructor(isAuth: boolean = false) {
+    constructor(isAuth: boolean = true) {
         if (isAuth) {
             this.dbUri = `mongodb://${settings.mongodb.userName}:${settings.mongodb.password}@${settings.mongodb.host}:${settings.mongodb.port}`;
 
@@ -17,7 +17,7 @@ export default class MongoDBHelper {
         }
 
     };
-    public static getInstance(isAuth: boolean = false) {
+    public static getInstance(isAuth: boolean = true) {
         return this._instace || (this._instace = new this(isAuth));
 
     }
