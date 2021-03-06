@@ -4,8 +4,8 @@
   "description": "Api en NodeJS para la aplicacion de carrito de compras ",
   "main": "index.js",
   "scripts": {
-    "start": "set NODE_ENV=PRODUCTION && node dist/index.js",
-    "dev": "set DEBUG=api:* && nodemon dist/index.js"
+    "start": "node dist/index.js",
+    "dev": "nodemon dist/index.js"
   },
   "author": "Miguel Angel Soria Rangel",
   "license": "MIT",
