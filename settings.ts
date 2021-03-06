@@ -4,7 +4,7 @@ export default{
         port:3000
     },
     mongodb:{
-        host:'localhost',
+        host:'MongoDB-Container',
         port:'27017',        
         userName:'dba-root',
         password:'mongoadmin'
